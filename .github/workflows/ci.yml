@@ -4,7 +4,7 @@ on:
 
 jobs:
   symfony:
-    name: Symfony 6 (PHP ${{ matrix.php-versions }})
+    name: Symfony 7 (PHP ${{ matrix.php-versions }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
