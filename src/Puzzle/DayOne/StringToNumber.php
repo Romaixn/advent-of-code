@@ -28,6 +28,6 @@ final class StringToNumber
 
     public function convert(string $input): string
     {
-        return strtr($input, array_combine(array_keys(self::NUMBERS_MAPPING), array_values(self::NUMBERS_MAPPING)));
+        return strtr($input, self::NUMBERS_MAPPING);
     }
 }
