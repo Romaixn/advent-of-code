@@ -35,7 +35,7 @@ class AocSubmitCommand extends Command
             ->addArgument('day', InputArgument::OPTIONAL, 'Day of the challenge')
             ->addArgument('level', InputArgument::OPTIONAL, 'Level of the challenge')
             ->addArgument('answer', InputArgument::OPTIONAL, 'Answer to submit')
-            ->addArgument('year', InputArgument::OPTIONAL, 'Year of the challenge', '2022')
+            ->addArgument('year', InputArgument::OPTIONAL, 'Year of the challenge', '2023')
         ;
     }
 

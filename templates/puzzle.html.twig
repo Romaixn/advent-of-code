@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Day One{% endblock %}
+
+{% block body %}
+    <div class="h-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-lg font-semibold text-primary">Day 1/25</h2>
+                <p class="mt-1 text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl lg:text-6xl">Trebuchet</p>
+            </div>
+        </div>
+        <div class="overflow-hidden rounded-md border border-gray-300 bg-white">
+            <ul role="list" class="divide-y divide-gray-300">
+                <li class="px-6 py-4">
+                    <h2 class="text-lg">Part one.</h2>
+                    <p class="part-one">Result: {{ part_one != 0 ? part_one|number_format : 'TODO' }}.</p>
+                </li>
+                <li class="px-6 py-4">
+                    <h2 class="text-lg">Part Two.</h2>
+                    <p class="part-two">Result: {{ part_two != 0 ? part_two|number_format : 'TODO' }}.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
