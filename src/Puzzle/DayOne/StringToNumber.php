@@ -5,6 +5,7 @@ namespace App\Puzzle\DayOne;
 final class StringToNumber
 {
     private const NUMBERS_MAPPING = [
+      // Edge cases
       'oneight' => 18,
       'twone' => 21,
       'threeeight' => 38,
@@ -13,6 +14,7 @@ final class StringToNumber
       'eightwo' => 82,
       'eighthree' => 83,
       'nineight' => 98,
+      // Numbers
       'one' => 1,
       'two' => 2,
       'three' => 3,
