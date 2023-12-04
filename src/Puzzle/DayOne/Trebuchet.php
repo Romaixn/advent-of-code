@@ -2,12 +2,11 @@
 
 namespace App\Puzzle\DayOne;
 
-use App\Utils\InputFetcher;
+use App\Puzzle\Day;
 
-final class Trebuchet
+final class Trebuchet extends Day
 {
     public function __construct(
-        private readonly InputFetcher $inputFetcher,
         private readonly StringToNumber $stringToNumber,
     ) {
     }

@@ -2,19 +2,15 @@
 
 namespace App\Puzzle\DayTwo;
 
-use App\Utils\InputFetcher;
+use App\Puzzle\Day;
 
-final class Cube
+final class Cube extends Day
 {
     public const RULES = [
       'red' => 12,
       'green' => 13,
       'blue' => 14,
     ];
-
-    public function __construct(private readonly InputFetcher $inputFetcher)
-    {
-    }
 
     public function partOne(): string
     {

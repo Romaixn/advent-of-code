@@ -23,11 +23,26 @@ services:
 
   # add more service definitions when explicit configuration is needed
   # please note that last definitions always *replace* previous ones
+  app.input_fetcher:
+    alias: App\Utils\InputFetcher
+    public: true
+
+  App\Puzzle\Day:
+    abstract: true
+    calls:
+      - setInputFetcher: ["@app.input_fetcher"]
+
   App\Puzzle\DayOne\Trebuchet:
+    parent: App\Puzzle\Day
     public: true
 
   App\Puzzle\DayOne\StringToNumber:
     public: true
 
   App\Puzzle\DayTwo\Cube:
+    parent: App\Puzzle\Day
+    public: true
+
+  App\Puzzle\DayThree\DayThree:
+    parent: App\Puzzle\Day
     public: true
